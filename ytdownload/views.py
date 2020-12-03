@@ -24,10 +24,10 @@ def download(request):
 def download_complete(request, res):
     global url
     homedir = os.path.expanduser("~")
-    dirs = homedir + '/Downloads'
-    print(f'DIRECT :', f'{dirs}/Downloads')
+    dirs = homedir + '/public_html/Download'
+    print(f'DIRECT :', f'{dirs}')
     if request.method == "POST":
-        YouTube(url).streams.get_by_resolution(res).download(homedir + '/Downloads')
+        YouTube(url).streams.get_by_resolution(res).download(homedir + '/public_html/Download')
         return render(request, 'download_complete.html')
     else:
         return render(request, 'sorry.html')

@@ -25,7 +25,7 @@ SECRET_KEY = 'gunnyq^g0_hl!y$dyh^e!_^sw3dvwz7b1#r3(^@qe6exty7#ty'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tos.petra.ac.id']
+ALLOWED_HOSTS = ['']
 
 
 # Application definition
